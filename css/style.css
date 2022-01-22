@@ -1,0 +1,623 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+
+}
+body{
+       font-family: 'Poppins', sans-serif;
+}
+.nav-box{
+       max-width: 1300px;
+       margin: auto;
+       padding: 0px 20px;
+}
+
+.box{
+       max-width: 1200px;
+       margin: auto;
+       padding: 0px 20px;
+}
+.navbar{
+       display: flex;
+       align-items: center;
+       padding: 15px;
+}
+.navbar a.cart{
+       margin-left: 3rem;
+}
+nav{
+       flex: 1;
+       text-align: right;
+}
+nav ul{
+       display: inline-block;
+       list-style-type: none;
+}
+nav ul li{
+       display: inline-block;
+       margin-right: 20px;
+}
+a{
+       text-decoration: none;
+       color: #555;
+}
+p{
+       color: #555;
+}
+section.header{
+       background: radial-gradient(#fff, #ffd6d6);
+}
+.header .logo img{
+       width: 80px;
+}
+
+.poster{
+       margin-top: 3rem;
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       padding-bottom: 4rem;
+}
+.poster .colum{
+       flex-basis: 50%;
+       min-width: 300px;
+}
+.poster .colum img{
+       max-width: 100%;
+       padding: 50px 0px;
+}
+.poster .colum h1{
+       font-size: 45px;
+       line-height: 50px;
+       margin: 25px 0px;
+}
+.poster .colum p{
+       font-size: 15px;
+       line-height: 30px;
+       margin: 25px 0px 60px 0px;
+}
+.btn{
+       background: orangered;
+       color: white;
+       border: 3px solid transparent;
+       border-radius: 2rem;
+       transition: all 0.5s ease;
+       font-size: 20px;
+       padding: 10px 20px;
+       font-weight: 550;
+}
+.btn:hover{
+       background: transparent;
+       border-color: orangered;
+       color: orangered;
+}
+
+.sec-head{
+       text-align: center;
+       margin: 5rem auto;
+}
+.line{
+       background: orangered;
+       color: orangered;
+       border: 1px solid transparent;
+       border-radius: 50%;
+       font-size: 2px;
+       font-weight: 100;
+       padding: 0px 60px;
+}
+
+section.cat{
+       text-align: center;
+       justify-content: center;
+}
+
+.card-wrapper{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       margin-bottom: 2rem;
+}
+
+.cat .cat-card{
+       position: relative;
+       height: 320px;
+       width: 300px;
+       margin: 0 20px;
+       margin-bottom: 2rem;
+}
+.cat-card img{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+}
+.cat .cat-card .overlay{
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+
+       background: rgba(0,0,0,0.5);
+       opacity: 0;
+       transition: all 0.5s ease;
+}
+.cat .cat-card .overlay:hover{
+       opacity: 1;
+}
+.cat .cat-card .overlay span{
+       color: white;
+       font-size: 3rem;
+       font-weight: 400;
+       margin: auto;
+}
+.feat{
+       padding-top: 2rem;
+       padding-bottom: 7rem;
+}
+.card{
+       height: 350px;
+       width: 250px;
+       margin: 0 1rem 7rem 1rem;
+       transition: all 0.5s ease;
+}
+.card:hover{
+       transform: translateY(-10px);
+}
+.card img{
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+}
+.rating{
+       color: orangered;
+}
+h3{
+       color: rgb(50, 50, 50);
+       font-weight: 400;
+       font-size: 20px;
+}
+.price{
+       color: green;
+       font-size: 20px;
+}
+.latest{
+       padding-bottom: 5rem;
+}
+
+.offer{
+       background: radial-gradient(#fff, #ffd6d6);
+       padding-top: 4rem;
+       padding-bottom: 4rem;
+}
+.offer .mibox{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       align-items: center;
+}
+.offer .mi-band img{
+       padding: 2rem;
+       transition: all 0.5s ease;
+       cursor: pointer;
+}
+.offer .mi-band img:hover{
+       transform: translateY(-10px);
+}
+.offer .mi-band h6{
+       color: rgb(54, 54, 54);
+       font-size: 18px;
+       font-weight: 500;
+       margin-bottom: 10px;
+}
+.offer .mi-band h1{
+       color: orangered;
+       font-size: 40px;
+       font-weight: 650;
+       margin-bottom: 10px;
+}
+.offer .mi-band p{
+       font-size: 15px;
+       margin-bottom: 40px;
+}
+.review .card{
+       width: auto;
+       height: auto;
+       text-align: center;
+       box-shadow: 0 0 20px 0 #555;
+       padding: 25px 25px;
+       margin: 0rem 1rem 5rem 1rem;
+       width: 300px;
+       transition: all 0.5s ease;
+       cursor: pointer;
+}
+.review .card:hover{
+       transform: translateY(-10px);
+}
+.review .card .rating{
+       margin: 10px 0 5px 0;
+}
+.review .card img{
+       width: 100px;
+       height: auto;
+       border-radius: 50%;
+       margin: 10px auto;
+}
+.fa-quote-right{
+       font-size: 30px;
+       color: orangered;
+       margin-bottom: 20px;
+}
+.brands{
+       padding-top: 1px;
+       padding-bottom: 7rem;
+}
+.brands .flex-box{
+       display: flex;
+       justify-content: center;
+
+}
+.brands .flex-box img{
+       transition: all 0.5s ease;
+}
+.brands .flex-box img:hover{
+       transform: translateY(-10px);
+}
+.footer{
+       padding-top: 5rem;
+       padding-bottom: 3rem;
+       background: rgb(29, 29, 29);
+}
+.footer .colums{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+
+}
+.footer .colums .logo-2{
+       text-align: lef;
+}
+.footer .colums .logo-2 p{
+       color: rgb(202, 202, 202);
+}
+.footer .colums .links{
+       text-align: cente;
+       padding: 20px;
+       color: orangered;
+}
+.footer .colums .links a{
+       color: rgb(202, 202, 202);
+}
+.footer .colums .social{
+       text-align: righ;
+       padding: 20px;
+       line-height: 30px;
+}
+.footer .colums .social h4{
+       margin-bottom: 5px;
+       color: orangered;
+}
+.footer .colums .social i{
+       font-size: 25px;
+       margin: 0 5px 20px 5px;
+       color: rgb(202, 202, 202)
+}
+.copyright{
+       background: rgb(29, 29, 29);
+       text-align: center;
+       padding: 20px;
+       border-top: 2px solid rgb(34, 34, 34);
+}
+.copyright p{
+       color: white;
+}
+.menu-icon{
+       width: 25px;
+       margin-left: 20px;
+       display: none;
+}
+/*---------All Products CSS-------*/
+.all-products{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin: 5rem auto;
+}
+select{
+       border: 3px solid rgb(122, 122, 122);
+       padding: 0 2rem;
+       color: rgb(122, 122, 122);
+       display: block; 
+}
+select:focus{
+       outline: none;
+}
+.page-num-btn{
+       margin: 0 auto 80px;
+       text-align: right;
+}
+.page-num-btn span{
+       color: orangered;
+       font-weight: 700;
+       display: inline-block;
+       margin-left: 10px;
+       width: 40px;
+       height: 40px;
+       line-height: 40px;
+       text-align: center;
+       border: 2px solid orangered;
+       transition: all 0.5s ease;
+       cursor: pointer;
+}
+.page-num-btn span:hover{
+       color: white;
+       background: orangered;
+       transform: translateY(3px);
+}
+/*----------------------Single Product Page-----------------------*/
+.single-product{
+       display: flex;
+       flex-wrap: wrap;
+       margin: 5rem auto;
+}
+.single-product .sp-colum img{
+       padding: 0;
+}
+.single-product .sp-colum{
+       padding: 20px;
+}
+.single-product .sp-colum h1{
+       margin: 10px auto;
+}
+.single-product .sp-colum h4{
+       margin-bottom: 15px;
+       font-size: 30px;
+}
+.single-product .sp-colum select{
+       margin-bottom: 40px;
+       margin-right: 30px;
+       height: 30px;
+       width: auto;
+       padding-left: 20px;
+       font-size: 20px;
+       border: 2px solid orangered;
+}
+.single-product .sp-colum a{
+       margin-bottom: 50px;
+}
+.single-product .sp-colum input{
+       margin-bottom: 50px;
+       margin-right: 30px;
+       height: 30px;
+       width: 70px;
+       padding-left: 20px;
+       font-size: 20px;
+       border: 2px solid orangered;
+}
+.single-product .sp-colum input:focus{
+       outline: none;
+}
+.simg{
+       display: flex;
+       justify-content: space-between;
+       cursor: pointer;
+}
+.simg img{
+       width: 100px;
+}
+.related-product h1{
+       margin-bottom: 2rem;
+}
+
+/*-----------------------------Cart Page--------------*/
+
+.cart-page{
+       margin: 80px auto;
+}
+table{
+       width: 100%;
+       border-collapse: collapse;
+}
+.cart-info{
+       display: flex;
+       flex-wrap: wrap;
+}
+th{
+       text-align: left;
+       padding: 5px;
+       color: #fff;
+       background: orangered;
+       font-weight: normal;
+}
+td{
+       padding: 10px 5px;
+}
+td input{
+       width: 40px;
+       height: 30px;
+       padding: 5px;
+}
+td a{
+       color: orangered;
+       font-size: 12px;
+}
+td img{
+       width: 80px;
+       height: 80px;
+       margin-right: 10px;
+}
+.total-price{
+       display: flex;
+       justify-content: flex-end;
+}
+.total-price table{
+       border-top: 2px solid orangered;
+       width: 100%;
+       max-width: 470px;
+}
+th:last-child{
+       text-align: right;
+}
+td:last-child{
+       text-align: right;
+}
+
+/*---------------------------Account Page-------------------------------*/
+
+.account{
+       padding: 4rem 0;
+       padding-bottom: 10rem;
+}
+.acc-box{
+       display: flex;
+       justify-content: space-between;
+       grid-gap: 2rem;
+       align-items: center;
+}
+.acc-img img{
+       width: 450px;
+}
+.form-box{
+       position: relative;
+       background: white;
+       width: 380px;
+       height: 480px;
+       padding: 5px;
+}
+.button-box{
+       position: relative;
+       text-align: center;
+       margin-top: 1rem;
+}
+.toggle-btn{
+       position: relative;
+       padding: 10px 20px;
+       border: none;
+       outline: none;
+       background: transparent;
+       cursor: pointer;
+       font-family: 'poppins';
+       font-weight: 600; color: #555;
+}
+
+.input-box{
+       position: absolute;
+       margin: 30px auto 0;
+       padding: 0 3rem;
+       display: flex;
+       flex-direction: column;
+       grid-gap: 20px;
+       width: 100%;
+       text-align: center;
+       background: transparent;
+}
+.input-field{
+       padding: 5px 10px;
+       font-family: 'poppins';
+       font-weight: 600;
+       color: #555;
+       border: 2px solid rgb(255, 212, 212);
+       border-radius: 2rem;
+}
+.rpw span{
+       margin-left: 20px;
+       color: #555;
+}
+.submit-btn{
+       padding: 5px 0;
+       font-size: 15px;
+       width: 80%;
+       margin: 0 auto;
+       cursor: pointer;
+}
+.signup-opt{
+       font-size: 14px;
+       font-weight: 500;
+}
+.signup-opt a{
+       color: orangered;
+       font-weight: 600;
+       font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Navigation Menu for Mobile---------*/
+
+@media only screen and (max-width:1024px) {
+       
+       .menu-icon{
+              display: block;
+              cursor: pointer;
+       }
+
+       nav ul{
+              position: absolute;
+              top: 70px;
+              left: 0px;
+              background: orangered;
+              width: 100%;
+              overflow: hidden;
+              transition: all 0.5s ease;
+       }
+       nav ul li{
+              display: block;
+              margin: 7px 30px;
+       }
+       nav ul li a{
+              color: white;
+       }
+       .navbar .logo img{
+              width: 150px;
+       }
+       .footer .logo-2 img{
+              width: 200px;
+       }
+       .cart-info p{
+              display: none;
+       }
+       .acc-box .acc-img{
+              display: none;
+       }
+       .acc-box .form-box{
+              justify-content: center;
+              align-items: center;
+              margin: 0 auto;
+       }
+
+}
+
+/*---------------Site-Design for Phones-------*/
+
+@media only screen and (max-width:600px) {
+
+       .nav-box{
+              text-align: center;
+       }
+       .card, .cat-card, .colum, .colums, .mi-band, .logo-2, .links, .social, .row, .sp-colum, .simg-row{
+              flex-basis: 100%;
+       }
+
+
+
+
+
+}
+
